@@ -259,3 +259,29 @@ window.addEventListener("mouseover", function(e) {
     top: `${posY}px`  
   }, {duration: 500, fill: "forwards"});
 })
+
+// const intro = document.querySelector(".intro");
+// const name = document.querySelector("#name");
+// const des = document.querySelector("#des");
+// const lineOne = document.querySelector("#lineOne");
+    
+// const tl = new TimelineMax();
+// tl.fromTo(
+//     "#intro", 1 , {height:"0%"}, {heigth:"100%"}
+// )
+// .fromTo(
+//     "#name", 1.2, {x:"-100%"}, {x:"0%"}
+// )      
+// .fromTo(
+//     "#intro", 1.2, {opacity: 0, x:30}, {opacity: 1, x:0}  
+// )
+
+
+const text =  baffle(".data");
+text.set({
+  characters: '░▒░ ░██░> ████▓ >█> ░/█>█ ██░░ █<▒ ▓██░ ░/░▒',
+        speed: 120
+});
+
+text.start();
+text.reveal(4000);
