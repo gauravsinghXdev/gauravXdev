@@ -605,10 +605,10 @@ flex-direction: row;
 
 /* AUTOMATION */
 .automation .bar .progress-line.html span{
-  width: 70%;
+  width: 55%;
 }
 .automation .bar .progress-line.css span{
-  width: 55%;
+  width: 40%;
 }
 
 .progress-line span::before{
@@ -683,15 +683,15 @@ flex-direction: row;
 
 /* PROGLANG */
 .progLang .progress-line.html span::after{
-  content: "85%";
+  content: "75%";
 }
 
 /* AUTOMATION */
 .automation .progress-line.html span::after{
-  content: "70%";
+  content: "55%";
 }
 .automation .progress-line.css span::after{
-  content: "55%";
+  content: "40%";
 }
 
 .barset {

@@ -173,34 +173,8 @@ function consoleText(words, id, colors) {
       
       iteration += 1 / 3;
     }, 20);
-  }  
-;
+  }  ;
 
-function namehacked() {
-    let iteration = 0;
-    
-    clearInterval(interval);
-    
-    interval = setInterval(() => {
-      event.target.innerText = event.target.innerText
-        .split("")
-        .map((letter, index) => {
-          if(index < iteration) {
-            return event.target.dataset.value[index];
-          }
-        
-          return letters[Math.floor(Math.random() * 26)]
-        })
-        .join("");
-      
-      if(iteration >= event.target.dataset.value.length){ 
-        clearInterval(interval);
-      }
-      
-      iteration += 1 / 3;
-    }, 30);
-
-};
 
 // VanillaTilt.init(document.querySelectorAll(".card"),{
 //   max: 25,
@@ -222,11 +196,11 @@ function namehacked() {
 //    console.log("done")
 // }
 // const Frontend = document.querySelector('#Frontend');
-document.querySelector("#Frontend").addEventListener("mouseover", myFunction);
+// document.querySelector("#Frontend").addEventListener("mouseover", myFunction);
 
-function myFunction() {
-  document.getElementsById("Frontend").classList.remove(".barset")
-}
+// function myFunction() {
+//   document.getElementsById("Frontend").classList.remove(".barset")
+// }
 
 // const trailer = document.getElementById("trailer");
 
@@ -244,37 +218,21 @@ function myFunction() {
 //   })
 // }
 
-const corsorDot = document.querySelector("[data-cursor-dot]");
-const corsorOutline = document.querySelector("[data-cursor-outlne]");
+// const corsorDot = document.querySelector("[data-cursor-dot]");
+// const corsorOutline = document.querySelector("[data-cursor-outlne]");
 
-window.addEventListener("mouseover", function(e) {
-  const posX = e.clientX;
-  const posY = e.clientY;
+// window.addEventListener("mouseover", function(e) {
+//   const posX = e.clientX;
+//   const posY = e.clientY;
 
-  corsorDot.style.left = `${posX}px`;  
-  corsorDot.style.top = `${posY}px`;  
+//   corsorDot.style.left = `${posX}px`;  
+//   corsorDot.style.top = `${posY}px`;  
   
-  corsorOutline.animate({
-    left: `${posX}px`,  
-    top: `${posY}px`  
-  }, {duration: 500, fill: "forwards"});
-})
-
-// const intro = document.querySelector(".intro");
-// const name = document.querySelector("#name");
-// const des = document.querySelector("#des");
-// const lineOne = document.querySelector("#lineOne");
-    
-// const tl = new TimelineMax();
-// tl.fromTo(
-//     "#intro", 1 , {height:"0%"}, {heigth:"100%"}
-// )
-// .fromTo(
-//     "#name", 1.2, {x:"-100%"}, {x:"0%"}
-// )      
-// .fromTo(
-//     "#intro", 1.2, {opacity: 0, x:30}, {opacity: 1, x:0}  
-// )
+//   corsorOutline.animate({
+//     left: `${posX}px`,  
+//     top: `${posY}px`  
+//   }, {duration: 500, fill: "forwards"});
+// })
 
 
 const text =  baffle(".data");
@@ -285,3 +243,76 @@ text.set({
 
 text.start();
 text.reveal(4000);
+
+
+ScrollReveal().reveal(".slide-right", {
+  duration: 1500,
+  origin: "left",
+  distance: "300px",
+  easing: "ease-in-out"
+});
+
+ScrollReveal().reveal(".slide-up", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "100px",
+  // easing: "cubic-bezier(.37,.01,.74,1)",
+  easing: "ease-in-out",
+  opacity: 0,
+  scale: 0.2
+});
+
+document.querySelector("#Frontend").onmouseenter = function() {
+  document.querySelector("#FrontendBar").classList.remove("barset")
+  document.querySelector("#FrontendBar").classList.add("show")
+}
+document.querySelector("#Frontend").onmouseleave = function() {
+  document.querySelector("#FrontendBar").classList.add("barset")
+  document.querySelector("#FrontendBar").classList.remove("show")
+}
+
+document.querySelector("#Backend").onmouseenter = function() {
+  document.querySelector("#BackendBar").classList.remove("barset")
+  document.querySelector("#BackendBar").classList.add("show")
+}
+document.querySelector("#Backend").onmouseleave = function() {
+  document.querySelector("#BackendBar").classList.add("barset")
+  document.querySelector("#BackendBar").classList.remove("show")
+}
+
+document.querySelector("#Database").onmouseenter = function() {
+  document.querySelector("#DatabaseBar").classList.remove("barset")
+  document.querySelector("#DatabaseBar").classList.add("show")
+}
+document.querySelector("#Database").onmouseleave = function() {
+  document.querySelector("#DatabaseBar").classList.add("barset")
+  document.querySelector("#DatabaseBar").classList.remove("show")
+}
+
+document.querySelector("#Design").onmouseenter = function() {
+  document.querySelector("#DesignBar").classList.remove("barset")
+  document.querySelector("#DesignBar").classList.add("show")
+}
+document.querySelector("#Design").onmouseleave = function() {
+  document.querySelector("#DesignBar").classList.add("barset")
+  document.querySelector("#DesignBar").classList.remove("show")
+}
+
+document.querySelector("#ProgLang").onmouseenter = function() {
+  document.querySelector("#ProgLangBar").classList.remove("barset")
+  document.querySelector("#frontendBar").classList.add("show")
+}
+document.querySelector("#ProgLang").onmouseleave = function() {
+  document.querySelector("#ProgLangBar").classList.add("barset")
+  document.querySelector("#ProgLangBar").classList.remove("show")
+}
+
+document.querySelector("#Automation").onmouseenter = function() {
+  document.querySelector("#AutomationBar").classList.remove("barset")
+  document.querySelector("#frontendBar").classList.add("show")
+}
+document.querySelector("#Automation").onmouseleave = function() {
+  document.querySelector("#AutomationBar").classList.add("barset")
+  document.querySelector("#AutomationBar").classList.remove("show")
+}
+
