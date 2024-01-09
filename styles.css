@@ -9,6 +9,7 @@ body {
   background-color: #021427;
   color: white;
   font-family: 'Fira Code', sans-serif;
+  overflow-x: hidden;
   /* cursor: none */
 }
   nav{
@@ -64,7 +65,7 @@ a.active,a:hover{
   @media (max-width: 952px){
     label.logo{
       font-size: 30px;
-      padding-left: 50px;
+      /* padding-left: 50px; */
     }
     nav ul li a{
       font-size: 16px;
@@ -107,6 +108,8 @@ section {
   .home {
     background-image: url(images/aryan-nikhil-lv7c_5ZXCvE-unsplash.jpg);
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 .intro {
     position: absolute;
@@ -155,7 +158,6 @@ p{
 section:has(.project)  {
     /* height: 100vh; */
     background-image: #002244;
- 
   }
   .container{
     position:relative;
@@ -221,7 +223,7 @@ section:has(.project)  {
   background:  rgb(112, 33, 187);
 }
 .others {
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 
@@ -232,6 +234,7 @@ section:has(.project)  {
 } 
 .projects {
   display: flex;
+  height: max-content;
 }  
 
 .pro-heading {
@@ -248,11 +251,11 @@ section:has(.project)  {
 }  
   
 .column {
-  width: 50%;
-  height: 100%;
+  width:100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .containerrr{
@@ -260,8 +263,15 @@ section:has(.project)  {
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:50px 0;
+  /* padding:40px 0; */
   transform-style:preserve-3d;
+}
+
+.toLeft {
+  right: 20%;
+}
+.toRight {
+  left: 20%;
 }
 
 .projects span {
@@ -292,8 +302,8 @@ section:has(.project)  {
 
 .containerrr .box{
   position:relative;
-  height: 200px;
-  width: 350px;
+  height: 13rem;
+  width: 23rem;
   margin:60px 0;
   background:#000;
   transform-style:preserve-3d;
@@ -325,6 +335,7 @@ section:has(.project)  {
   transition:0.5s;
   transform-style:preserve-3d;
   text-align: center;
+  z-index: 200;
 }
 
 .containerrr a {color: rgb(15,15, 15);}
@@ -804,3 +815,36 @@ flex-direction: row;
   z-index: 2000;
   pointer-events: none;
 } 
+
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+  label {padding-left: 0px;}
+  .intro {left: 10%; font-size: large;}
+  .toLeft {right: 0%;}
+  .toRight {left: 0%;}
+  .containerrr .box {height: 11rem; width: 20rem;}
+  .contentBx {font-size: small;}
+  .P-button {padding: 5px 8px;}
+  .container .Ocard {margin-left: 20px;}
+  .skill-half {width: 100%;}
+  .links {flex-direction: column;}
+  .link {padding: 20px;}
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .intro {left: 10%; font-size: large;}
+  .toLeft {right: 0%;}
+  .toRight {left: 0%;}
+  .skill-half {width: 100%;}
+  .links {flex-direction: column;}
+  .link {padding: 20px;}
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  section {height: 50vh;}
+  .container {height: max-content;}
+}
+
