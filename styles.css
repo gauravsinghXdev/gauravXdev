@@ -7,6 +7,7 @@
 }
 body {
   background-color: #021427;
+  background-color: #041222;
   color: white;
   font-family: 'Fira Code', sans-serif;
   overflow-x: hidden;
@@ -848,3 +849,63 @@ flex-direction: row;
   .container {height: max-content;}
 }
 
+.cardbox {
+  height: 225px;
+  width: 400px;
+  margin: 50px;
+}
+
+.card-head {
+  /* color: black; */
+  width: fit-content;
+  padding: 20px;
+  color: gray;
+  font-weight: 600;
+  border-radius: 50%;
+  transform: translate(-50px, 170px);
+  background-color: #00000052;
+  box-shadow: #00000052 15px -40px 40px 50px;
+}
+
+.v-head {
+  transform: translate(-50px, 340px);
+}
+
+.card01 {
+  background-image: url("images/Screenshot\ \(60\).png");
+  background-size: cover;
+}
+.card02 {
+  background-image: url("images/Screenshot\ \(56\).png");
+  background-size: cover;
+}
+.card03 {
+  background-image: url("images/Screenshot\ \(61\).png");
+  background-size: cover;
+}
+.card04 {
+  background-image: url("images/Screenshot\ \(57\).png");
+  background-size: cover;
+}
+.card05 {
+  background-image: url("https://plus.unsplash.com/premium_photo-1661761077411-d50cba031848?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJlc2VhcmNofGVufDB8fDB8fHww");
+  background-size: cover;
+}
+
+.project-section {
+  height: 120vh;
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.forline {
+  border-bottom: white solid 3px;
+  padding-bottom: 5px;
+  font-size: x-large;
+  font-weight: 600;
+  color: white;
+}

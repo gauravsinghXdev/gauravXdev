@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+
   <section id="homepage" class="home">
       <nav>
         <input type="checkbox" id="check">
@@ -40,93 +40,56 @@
 
     </section>
     <h1 id="pro-head" class="pro-heading">PROJECTS</h1>    
-  <section class="projects">
-    <!-- <div class="container">
-      <div class="card card1">
-        <img src="images/pexels-alexandre-p-junior-7736062.jpg">
-        <h2>E-Court Portal</h2>
-        <div class="content">
-          <p>E-Court portal for online video hearing with embedded face recognisation for entering conference</p>
-          <a href="#">Git hub</a>
-          <a href="#">Video Link</a>
-        </div>
-      </div>
-      
-      <div class="card card2">
-        <img src="images/Untitled design (1).jpg">
-        <h2>Video Conference</h2>
-        <div class="content">
-          <p>Video conferencing for group chat with live chat option. Create a room and enjoy chat with friends.</p>
-          <a href="#">Git hub</a>
-          <a href="#">Video Link</a>
-        </div>
-      </div>
-      
-      <div class="card card3">
-        <img src="images/Untitled design (2).png">
-        <h2>My Portfolio 1.0</h2>
-        <div class="content">
-          <p>My Portfolio website for show casing my project and skills. This was only for learning purpose.</p>
-          <a href="#">Git hub</a>
-          <a href="#">Preview</a>
-        </div>
-      </div>
-    </div> -->
+  <section class="project-section" style="margin-bottom: 12rem;">
 
-    <div class="column ">
-    <div class="containerrr toLeft slide-right">
-      <div class="box">
-        <div class="imgBx card1">
-          <span>E-Court Portal</span>
-        </div>
-        <div class="contentBx">
-          <p>E-Court portal for online video hearing with embedded face recognisation for entering conference.</p>
-          <button class="P-button" style="margin-right: 5px;"><a href="https://github.com/gaurav07singh10/E-portal" target="_blank">Git hub</a></button>
-          <button class="P-button"><a href="pages/eCourtPreview.html">Preview</a></button>
+    <a href="/pages/eCourt.html" id="ecourt">
+      <div class="cardbox card01" data-tilt data-tilt-glare style="position: absolute; left: 15%;">
+        <div class="card-head">
+          <p class="forline">E-Court</p>
+          <p>01 -></p>
         </div>
       </div>
-    </div>
+    </a>
+    
+    <a href="/pages/xblog.html" id="xblog">
+      <div class="cardbox card02" data-tilt data-tilt-glare style="position: absolute;
+      top: 35%; right: 25%;">
+        <div class="card-head">
+          <p class="forline">XBlog</p>
+          <p>02 -></p>
+        </div>
+      </div>
+    </a>
+    
+    <a href="/pages/xcleats.html" id="xcleats">  
+      <div class="cardbox card03" data-tilt data-tilt-glare style="position: absolute; top: 5%; right: 2%; height: 400px; width: 225px;">
+        <div class="card-head v-head">
+          <p class="forline">XCleats</p>
+          <p>03 -></p>
+        </div>
+      </div>
+    </a>
 
-    <div class="containerrr toRight slide-right">
-      <div class="box">
-        <div class="imgBx card2">
-        <span>Video Conference</span>
+    <a href="/pages/xbook.html" id="xbook">
+      <div class="cardbox card04" data-tilt data-tilt-glare style="position: absolute; top: 60%; left: 2%;">
+        <div class="card-head">
+          <p class="forline">XBook</p>
+          <p>04 -></p>
+        </div>
       </div>
-      <div class="contentBx">
-        <p>E-Court portal for online video hearing with embedded face recognisation for entering conference.</p>
-        <button class="P-button" style="margin-right: 5px;"><a href="" target="_blank">Git hub</a></button>
-        <button class="P-button"><a href="">Preview</a></button>
-      </div>
-    </div>
-  </div>
+    </a>
 
-    <div class="containerrr toLeft slide-right">
-      <div class="box">
-        <div class="imgBx card3">
-          <span>My Portfolio 1.0</span>
-        </div>
-        <div class="contentBx">
-          <p>My Portfolio website for show casing my project and skills. This was only for learning purpose.</p>
-          <button class="P-button" style="margin-right: 5px;"><a href="" target="_blank">Git hub</a></button>
-          <button class="P-button"><a href="">Preview</a></button>
+    <a href="/pages/research.html" id="research">
+      <div class="cardbox card05" data-tilt data-tilt-glare style="position: absolute; top: 80%; left: 50%;">
+        <div class="card-head">
+          <p class="forline">Research Paper - ML model</p>
+          <p>05 -></p>
         </div>
       </div>
-    </div>
-  </div>
+    </a>
+
   </section>
 
-  <div class="others">
-    <h1 class="pro-heading">OTHERS</h1>
-      <div class="container slide-right">
-        <div class="Ocard Ocard1">
-            <h3>Research Paper</h3>
-          <div class="content">
-            <p>Research Paper on "Automated Breast Cancer Diagnosis using machine Learning Algorithms.</p><br>
-            <a href="#">Preview</a>
-          </div>
-        </div>
-      </div>  
-  </div>
   <section id="skill-section" class="skills">
     <h1 class="pro-heading">SKILLS</h1>
     <div class="skill-container">
@@ -365,9 +328,7 @@
 <!-- <div id="cursor-dot" data-corsor-dot ></div>
 <div id="cursor-outline" data-corsor-outline ></div> -->
 </body>
-<script src="jquery.js" ></script> 
-<script src="tilt.js"></script>
-<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script src="card-tilt.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>

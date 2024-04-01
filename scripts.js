@@ -176,81 +176,12 @@ function consoleText(words, id, colors) {
   }  ;
 
 
-// VanillaTilt.init(document.querySelectorAll(".card"),{
-//   max: 25,
-//   speed: 400,
-//   glare: true,
-//   "max-glare": 0.3
+// ScrollReveal().reveal(".slide-right", {
+//   duration: 1500,
+//   origin: "left",
+//   distance: "300px",
+//   easing: "ease-in-out"
 // });
-  
-
-// VanillaTilt.init(document.querySelector(".box"), {
-//   max: 25,
-//   speed: 400
-// });
-
-// const Frontend = document.querySelector('#Frontend');
-// document.querySelector('.fcard').addEventListener = e => {
-//   //  skillimg.classList.remove('.hideImg');
-//    Frontend.classList.remove('.barset');
-//    console.log("done")
-// }
-// const Frontend = document.querySelector('#Frontend');
-// document.querySelector("#Frontend").addEventListener("mouseover", myFunction);
-
-// function myFunction() {
-//   document.getElementsById("Frontend").classList.remove(".barset")
-// }
-
-// const trailer = document.getElementById("trailer");
-
-// window.onmouseover = e => {
-//   const x = e.clientX - trailer.offsetWidth / 2;
-//   const y = e.clientY - trailer.offsetHeight / 2;
-
-//   const keyframes = {
-//     trasform: `translate($(x)px, (y)px)`
-//   }
-
-//   trailer.animate(keyframes, {
-//     duration: 800,
-//     fill: "forwards"
-//   })
-// }
-
-// const corsorDot = document.querySelector("[data-cursor-dot]");
-// const corsorOutline = document.querySelector("[data-cursor-outlne]");
-
-// window.addEventListener("mouseover", function(e) {
-//   const posX = e.clientX;
-//   const posY = e.clientY;
-
-//   corsorDot.style.left = `${posX}px`;  
-//   corsorDot.style.top = `${posY}px`;  
-  
-//   corsorOutline.animate({
-//     left: `${posX}px`,  
-//     top: `${posY}px`  
-//   }, {duration: 500, fill: "forwards"});
-// })
-
-
-const text =  baffle(".data");
-text.set({
-  characters: '░▒░ ░██░> ████▓ >█> ░/█>█ ██░░ █<▒ ▓██░ ░/░▒',
-        speed: 120
-});
-
-text.start();
-text.reveal(4000);
-
-
-ScrollReveal().reveal(".slide-right", {
-  duration: 1500,
-  origin: "left",
-  distance: "300px",
-  easing: "ease-in-out"
-});
 
 ScrollReveal().reveal(".slide-up", {
   duration: 1000,
@@ -261,6 +192,12 @@ ScrollReveal().reveal(".slide-up", {
   opacity: 0,
   scale: 0.2
 });
+
+ScrollReveal().reveal('.cardbox', { 
+  duration: 400,
+  origin: "left",
+  distance: "50px",
+  easing: "ease-in-out" });
 
 document.querySelector("#Frontend").onmouseenter = function() {
   document.querySelector("#FrontendBar").classList.remove("barset")
