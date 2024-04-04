@@ -50,6 +50,22 @@ function consoleText(words, id, colors) {
 }
 
 
+//Baffle
+const text1 = baffle("#lineOne");
+text1.set({
+    characters: "█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>",
+    speed: 120
+});
+text1.start();
+text1.reveal(2000);
+const text2 = baffle("#name");
+text2.set({
+    characters: "█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>",
+    speed: 120
+});
+text2.start();
+text2.reveal(4000);
+
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   
   let interval = null;
