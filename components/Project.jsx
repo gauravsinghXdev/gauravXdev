@@ -19,26 +19,31 @@ const Project = () => {
 
       <div className="card-list">
         {Object.keys(Projects).map((key, i) => {
-          const tiltRef = useTiltEffect(tiltOptions);
+          // Each card should have its own tilt effect
+          const TiltCard = () => {
+            const tiltRef = useTiltEffect(tiltOptions);
 
-          return (
-            <Link key={i} href={`/${Projects[key].title}`} className={Projects[key].forPosition}>
-              <div >
-                <Image
-                  src={Projects[key].image}
-                  alt={Projects[key].title}
-                  height={200}
-                  width={400}
-                  className={Projects[key].orientation}
-                  ref={tiltRef}
-                />
-                <div className="projectTitlebox" >
-                  <p className='projectTitle'>{Projects[key].title}</p>
-                  <p>{Projects[key].index}</p>
+            return (
+              <Link href={`/${Projects[key].title}`} className={Projects[key].forPosition}>
+                <div>
+                  <Image
+                    src={Projects[key].image}
+                    alt={Projects[key].title}
+                    height={200}
+                    width={400}
+                    className={Projects[key].orientation}
+                    ref={tiltRef}
+                  />
+                  <div className="projectTitlebox">
+                    <p className='projectTitle'>{Projects[key].title}</p>
+                    <p>{Projects[key].index}</p>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          );
+              </Link>
+            );
+          };
+
+          return <TiltCard key={i} />;
         })}
       </div>
     </section>
