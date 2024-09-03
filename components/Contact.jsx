@@ -5,9 +5,9 @@ const Contact = () => {
     return (
         <>
             <section id="cont-section" className="contact">
-                    <div>
-                        <h3>Find me on:</h3>
-                    </div>
+                <div>
+                    <h3>Find me on:</h3>
+                </div>
                 <div className="media">
                     <div className="links">
                         <div className="link">
@@ -27,15 +27,18 @@ const Contact = () => {
                             <a href="https://www.instagram.com/yourusername/" target="_blank" rel="noopener noreferrer">Instagram</a>
                         </div>
                     </div>
-                    <button className="getInTouch"><a href="pages/contact.html">
-                    <span class="text">Get in touch</span><span>Send message</span>
-                    </a></button>
-                    <button className="getInTouch"><a href="pages/contact.html">
-                    <span class="text">Know About me</span><span>Alternate text</span>
-                    </a></button>
-
+                    <button className="getInTouch">
+                        <a href="pages/contact.html">
+                            <span className="text">Get in touch</span><span>Send message</span>
+                        </a>
+                    </button>
+                    <button className="getInTouch">
+                        <a href="pages/contact.html">
+                            <span className="text">Know About me</span><span>Alternate text</span>
+                        </a>
+                    </button>
                 </div>
-                <h1 className='collaborate-button'>Let's Collaborate</h1>
+                <h1 className='collaborate-button'>Let&#39;s Collaborate</h1>
             </section>
         </>
     )

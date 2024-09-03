@@ -12,10 +12,10 @@ const Designs = () => {
 
     const scale = useTransform(scrollYProgress, [0, 1], [1, 4]);
     const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
-    const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
-    const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
-    const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
-    const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9]);
+    const scale5 = useTransform(scrollYProgress, [0, 1], [1, 4.5]);
+    const scale6 = useTransform(scrollYProgress, [0, 1], [1, 4.7]);
+    const scale8 = useTransform(scrollYProgress, [0, 1], [1, 5]);
+    const scale9 = useTransform(scrollYProgress, [0, 1], [1, 5.3]);
 
     const pictures = [
         {
