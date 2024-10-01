@@ -15,7 +15,7 @@ const Project = () => {
 
   return (
     <section className="project-section">
-      <h1 id="pro-head" className="pro-heading">WORK</h1>
+      <h1 className="heading">WORK</h1>
 
       <div className="card-list">
         {Object.keys(Projects).map((key, i) => {

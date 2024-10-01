@@ -47,7 +47,7 @@ const Designs = () => {
     
     return (
         <>
-        <h1>Designs</h1>
+        <h1 className='heading design-head'>Designs</h1>
             <div ref={container} className='design-container'>
                 <div className="sticky">
                     {pictures.map(({ src, scale }, index) => {
