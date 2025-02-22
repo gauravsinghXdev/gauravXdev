@@ -19,7 +19,7 @@ const Designs = () => {
 
     const pictures = [
         {
-            src: "/letsTalk.png",
+            src: "/LetsTalk.png",
             scale: scale4
         },
         {
