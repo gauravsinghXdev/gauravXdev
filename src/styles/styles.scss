@@ -236,7 +236,7 @@ nav {
 #lineOne {
   // font-size: ;
 }
-.line3 {
+.line3, #lineOne {
   font-family: 'Jura', sans-serif;
 }
 #dev{
@@ -433,8 +433,7 @@ font-weight: bold;
 
 
 #about {
-  margin: 10vh 20vh;
-  margin-top: 100vh;
+  margin: 20px 100px;
 }
 
 .topbar, .bottombar {
@@ -482,41 +481,42 @@ font-weight: bold;
 
 .filename span {
   border: 0.5px solid white;
-  height: 100%;
+  // height: 100%;
   padding: 0px 3px;
 }
 
 .Portfolio {
   display: grid;
   grid-template-columns: 40px auto;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background: rgba(0, 0, 0, 0.055);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   font-size: 17px;
-  height: 35rem;
+  height: 55vh;
   font-family: 'fira code';
   color: azure;
-  border: 1px solid white;
+  border: 1px solid rgb(169, 169, 169);
 }
+
+.about-container {
+  background-image: linear-gradient(315deg, #da98b71d 0%, #722ae61c 74%);
+    // background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
 .number {
   display: grid;
   // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   right: 0;
   border-right: 1px solid rgb(144, 144, 144);
-  padding-top: 50px;
-  padding-bottom: 70px;
 }
 .num {
   // margin-left: auto;
   // margin-right: 10px;
   margin: auto;
   color: rgb(179, 179, 179);
-  padding: 9px 0px;
+  // padding: 9px 0px;
 }
 .info {
-  padding-top: 50px;
-  padding-bottom: 70px;
   display: grid;
   // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-left: 5px;
