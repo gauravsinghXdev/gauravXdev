@@ -43,9 +43,9 @@ const About = () => {
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div style={{ display: 'flex', flexDirection: 'column', paddingLeft: '80px', paddingRight: '50px', gap: '20px', fontFamily: 'monospace', lineHeight: '20px' }}>
 
-      <p>Hi, I’m a full-stack developer with a passion for crafting applications that solve real-world problems. I work comfortably across the stack, building intuitive frontends with React and robust backends using Python, FastAPI, and the MERN stack.</p>
+      <p>Hi, I&apos;m a full-stack developer with a passion for crafting applications that solve real-world problems. I work comfortably across the stack, building intuitive frontends with React and robust backends using Python, FastAPI, and the MERN stack.</p>
       <p>Beyond web development, I enjoy diving deep into SQL databases and experimenting with machine learning algorithms to make data-driven applications smarter and more efficient. Lately, I've been exploring LangChain and cloud technologies—always on the lookout for new tools and ideas that can push my skills further.</p>
-      <p>At heart, I’m a builder: I love turning ideas into working products, learning new technologies along the way, and constantly growing as a developer.</p>
+      <p>At heart, I&apos;m a builder: I love turning ideas into working products, learning new technologies along the way, and constantly growing as a developer.</p>
         </div>
         <img src="/Version control-bro.svg" alt="me" height={500} width="auto" style={{ marginRight: '50px' }} />
       </div>
@@ -112,14 +112,14 @@ const About = () => {
               <div className="info" style={{ fontFamily: 'monospace', color: '#fff', fontSize: 16 }}>
                 <p className="details"><span className="blue">className</span> <span className="golden">GauravSingh</span> {'{'}</p>
                 <p className="details"><span className="dots">..</span><span className="blue">constructor</span>() {'{'}</p>
-                <p className="details"><span className="dots">....</span><span className="pink">this.</span><span className="yellow">name</span> <span className="pink">=</span> <span className="green">'Gaurav Singh'</span></p>
-                <p className="details"><span className="dots">....</span><span className="pink">this.</span><span className="yellow">email</span> <span className="pink">=</span> <span className="green">'gaurav07singh10@gmail.com'</span></p>
+                <p className="details"><span className="dots">....</span><span className="pink">this.</span><span className="yellow">name</span> <span className="pink">=</span> <span className="green">&apos;Gaurav Singh&apos;</span></p>
+                <p className="details"><span className="dots">....</span><span className="pink">this.</span><span className="yellow">email</span> <span className="pink">=</span> <span className="green">&apos;gaurav07singh10@gmail.com&apos;</span></p>
                 <p className="details"><span className="dots">..</span>{'}'}</p>
                 <p className="details"><span className="dots">..</span><span className="golden">skills()</span> {'{'}</p>
-                <p className="details"><span className="dots">....</span><span className="blue">return</span> [<span className="green">'HTML/CSS', 'JavaScript', 'Python', 'Bootstrap/Tailwind',</span> </p>
-                <p className="details"><span className="dots">......</span><span className="green">'Node.js', 'Express.js', 'MySQL', 'MongoDB', 'ReactJs', 'NextJs', 'FastAPI'</span></p>
-                <p className="details"><span className="dots">......</span><span className="green">'Firebase', 'Figma', 'UI/UX', 'Artificial Intelligence',</span></p>
-                <p className="details"><span className="dots">......</span><span className="green">'Machine Learning Algorithms', 'WebRTC', 'NumPy', 'Pandas'</span> {']'}</p>
+                <p className="details"><span className="dots">....</span><span className="blue">return</span>{'['}<span className="green">&apos;HTML/CSS&apos;, &apos;JavaScript&apos;, &apos;Python&apos;, &apos;Bootstrap/Tailwind&apos;,</span> </p>
+                <p className="details"><span className="dots">......</span><span className="green">&apos;Node.js&apos;, &apos;Express.js&apos;, &apos;MySQL&apos;, &apos;MongoDB&apos;, &apos;ReactJs&apos;, &apos;NextJs&apos;, &apos;FastAPI&apos;</span></p>
+                <p className="details"><span className="dots">......</span><span className="green">&apos;Firebase&apos;, &apos;Figma&apos;, &apos;UI/UX&apos;, &apos;Artificial Intelligence&apos;,</span></p>
+                <p className="details"><span className="dots">......</span><span className="green">&apos;Machine Learning Algorithms&apos;, &apos;WebRTC&apos;, &apos;NumPy&apos;, &apos;Pandas&apos;</span> {']'}</p>
                 <p className="details">{'}'};</p>
               </div>            
             </div>
