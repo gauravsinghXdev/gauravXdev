@@ -44,7 +44,7 @@ const About = () => {
         <div style={{ display: 'flex', flexDirection: 'column', paddingLeft: '80px', paddingRight: '50px', gap: '20px', fontFamily: 'monospace', lineHeight: '20px' }}>
 
       <p>Hi, I&apos;m a full-stack developer with a passion for crafting applications that solve real-world problems. I work comfortably across the stack, building intuitive frontends with React and robust backends using Python, FastAPI, and the MERN stack.</p>
-      <p>Beyond web development, I enjoy diving deep into SQL databases and experimenting with machine learning algorithms to make data-driven applications smarter and more efficient. Lately, I've been exploring LangChain and cloud technologies—always on the lookout for new tools and ideas that can push my skills further.</p>
+      <p>Beyond web development, I enjoy diving deep into SQL databases and experimenting with machine learning algorithms to make data-driven applications smarter and more efficient. Lately, I&apos;ve been exploring LangChain and cloud technologies—always on the lookout for new tools and ideas that can push my skills further.</p>
       <p>At heart, I&apos;m a builder: I love turning ideas into working products, learning new technologies along the way, and constantly growing as a developer.</p>
         </div>
         <img src="/Version control-bro.svg" alt="me" height={500} width="auto" style={{ marginRight: '50px' }} />
