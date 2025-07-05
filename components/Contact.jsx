@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'; // Importing specific icons
+import Link from 'next/link';
 
 const Contact = () => {
     return (
@@ -33,9 +34,9 @@ const Contact = () => {
                         </a>
                     </button>
                     <button className="getInTouch">
-                        <a href="pages/contact.html">
-                            <span className="text">Know About me</span><span>Alternate text</span>
-                        </a>
+                        <Link href="/about">
+                            <span className="text">Know About me</span><span>Come here</span>
+                        </Link>
                     </button>
                 </div>
                 <h1 className='collaborate-button'>Let&#39;s Collaborate</h1>
